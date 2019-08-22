@@ -1,12 +1,12 @@
 // Main App Variables
-$primaryColor: red;
-$specialBtns: blue;
-$operatorBtns: lightblue;
-$numberBtns: darkblue;
+$primaryColor: #BB1233;
+$specialBtns: #2061B0;
+$operatorBtns: #3DB5E5;
+$numberBtns: #5A2A5B;
 
 .container {
   background-color: $primaryColor;
-  width: 370px;
+  width: 395px;
   padding: 2rem;
   border-radius: 12px;
   border: none;
@@ -32,6 +32,9 @@ $numberBtns: darkblue;
 }
 
 // specialBtn styles
+.specialBtn {
+  background: $specialBtns;
+}
 
 // OperatorBtn styles
 
