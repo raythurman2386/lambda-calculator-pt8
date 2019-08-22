@@ -6,7 +6,7 @@ import NumberButton from './NumberButton';
 //Import your array data to from the provided data file
 import { numbers } from '../../../data';
 
-const Numbers = ({ setTotal, total }) => {
+const Numbers = ({ setTotal }) => {
   // STEP 2 - add the imported data to state
   const [numberButtons, setNumberButtons] = useState(numbers);
   return (
@@ -16,7 +16,7 @@ const Numbers = ({ setTotal, total }) => {
        it any props needed by the child component*/}
       {numberButtons.map((number, index) =>
         index !== 9
-          ? <NumberButton total={total} setTotal={setTotal} value={number} className="btn" />
+          ? <NumberButton setTotal={setTotal} value={number} className="btn" />
           : <NumberButton setTotal={setTotal} value={number} className="zeroBtn" />)}
     </div>
   )
