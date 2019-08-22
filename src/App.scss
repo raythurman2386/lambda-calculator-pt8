@@ -22,10 +22,9 @@ $numberBtns: #184379;
     width: 100%;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
-
-// Display styles
 
 // General btn styles
 .btn {
@@ -45,7 +44,8 @@ $numberBtns: #184379;
 .special__btn__container{
   display: flex;
   flex-direction: row;
-  width: 73%;
+  justify-content: space-evenly;
+  width: 100%;
 
   .specialBtn {
     background: $specialBtns;
@@ -56,7 +56,6 @@ $numberBtns: #184379;
 .operator__btns {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 
   .operatorBtn {
     background: $operatorBtns;
@@ -67,6 +66,7 @@ $numberBtns: #184379;
   .number__btn__container {
     display: flex;
     flex-wrap: wrap;
-    width: 75%;
+    justify-content: space-evenly;
+    width: 100%;
   }
 }

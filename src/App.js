@@ -21,12 +21,16 @@ function App() {
   return (
     <div className='container'>
       <Logo className='logo' />
+      <Display total={total} />
       <div className='app'>
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Display total={total} />
-        <Specials />
-        <Numbers />
-        <Operators />
+        <div className="left--side">
+          <Specials />
+          <Numbers />
+        </div>
+        <div className="right--side">
+          <Operators />
+        </div>
       </div>
     </div>
   );
