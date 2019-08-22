@@ -17,6 +17,8 @@ $numberBtns: #5A2A5B;
   .app {
     width: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
   }
 
 // Display styles
@@ -27,20 +29,37 @@ $numberBtns: #5A2A5B;
   border-radius: 50%;
   margin: .4rem;
   padding: .5rem;
-  width: 40px;
-  height: 40px;
+  width: 20%;
+  height: 60px;
   border: none;
 }
 
 // specialBtn styles
-.specialBtn {
-  background: $specialBtns;
+.special__btn__container{
+  display: flex;
+  flex-direction: row;
+  width: 73%;
+
+  .specialBtn {
+    background: $specialBtns;
+  }
 }
 
 // OperatorBtn styles
-.operatorBtn {
-  background: $operatorBtns;
+.operator__btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .operatorBtn {
+    background: $operatorBtns;
+  }
 }
 
 // NumberBtn styles
+  .number__btn__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+  }
 }
