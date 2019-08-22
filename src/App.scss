@@ -23,6 +23,7 @@ $numberBtns: #5A2A5B;
 
 // General btn styles
 .btn {
+  background: $numberBtns;
   border-radius: 50%;
   margin: .4rem;
   padding: .5rem;
@@ -37,6 +38,9 @@ $numberBtns: #5A2A5B;
 }
 
 // OperatorBtn styles
+.operatorBtn {
+  background: $operatorBtns;
+}
 
 // NumberBtn styles
 }
