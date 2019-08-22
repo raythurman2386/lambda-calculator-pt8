@@ -1,10 +1,10 @@
 import React from 'react';
 
-const NumberButton = ({ className, value, setTotal }) => {
+const NumberButton = ({ total, className, value, setTotal }) => {
   return (
     <>
       {/* Display a button element rendering the data being passed down from the parent container on props */}
-      <button onClick={() => { setTotal(value) }} className={className} value={value}>{value}</button>
+      <button onClick={() => { setTotal(total + value) }} className={className} value={value}>{value}</button>
     </>
   );
 };

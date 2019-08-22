@@ -25,7 +25,7 @@ function App() {
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         <div>
           <Specials />
-          <Numbers setTotal={setTotal} />
+          <Numbers total={total} setTotal={setTotal} />
         </div>
         <div>
           <Operators />
