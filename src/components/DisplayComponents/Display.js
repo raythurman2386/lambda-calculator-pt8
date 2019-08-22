@@ -1,11 +1,11 @@
 import React from 'react';
 import './Display.scss';
 
-const Display = props => {
+const Display = ({ total }) => {
   return (
     <div className='display'>
       {/* Display any props data here */}
-      <input type="text" className="input" value={props.total} disabled />
+      <input type="text" className="input" value={total} disabled />
     </div>
   );
 };

@@ -23,11 +23,11 @@ function App() {
       <Display total={total} />
       <div className='app'>
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <div className="left--side">
+        <div>
           <Specials />
           <Numbers />
         </div>
-        <div className="right--side">
+        <div>
           <Operators />
         </div>
       </div>
