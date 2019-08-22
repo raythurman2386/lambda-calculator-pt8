@@ -5,7 +5,7 @@ const Display = props => {
   return (
     <div className='display'>
       {/* Display any props data here */}
-      <input className="input" placeholder={props.total} />
+      <input type="text" className="input" value={props.total} disabled />
     </div>
   );
 };

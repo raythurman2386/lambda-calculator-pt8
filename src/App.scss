@@ -36,8 +36,11 @@ $numberBtns: #184379;
   height: 80px;
   border: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
   box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.75);
+  &:hover {
+    background: lighten( $numberBtns, 5% );
+  }
 }
 
 // specialBtn styles
@@ -49,6 +52,9 @@ $numberBtns: #184379;
 
   .specialBtn {
     background: $specialBtns;
+    &:hover {
+    background: darken( $specialBtns, 5% );
+  }
   }
 }
 
@@ -59,6 +65,9 @@ $numberBtns: #184379;
 
   .operatorBtn {
     background: $operatorBtns;
+    &:hover {
+    background: darken( $operatorBtns, 5% );
+  }
   }
 }
 
@@ -68,5 +77,21 @@ $numberBtns: #184379;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
+
+    .zeroBtn {
+      background: $numberBtns;
+      border-radius: 50px;
+      margin: .4rem;
+      padding: .5rem;
+      width: 178px;
+      height: 80px;
+      border: none;
+      color: white;
+      font-size: 2rem;
+      box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.75);
+      &:hover {
+        background: lighten( $numberBtns, 5% );
+      }
+    }
   }
 }
