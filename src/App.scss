@@ -1,8 +1,8 @@
 // Main App Variables
 $primaryColor: #BB1233;
 $specialBtns: #2061B0;
-$operatorBtns: #3DB5E5;
-$numberBtns: #5A2A5B;
+$operatorBtns: #237293;
+$numberBtns: #184379;
 
 .container {
   background-color: $primaryColor;
@@ -32,6 +32,9 @@ $numberBtns: #5A2A5B;
   width: 20%;
   height: 60px;
   border: none;
+  color: white;
+  font-size: 1.5rem;
+  box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.75);
 }
 
 // specialBtn styles
