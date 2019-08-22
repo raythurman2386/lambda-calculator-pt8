@@ -12,23 +12,15 @@ const Operators = () => {
   const [operatorData, setOperatorData] = useState(operators);
 
   return (
-    <OperatorButtonContainer>
+    <div>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
       {operatorData.map(operator => {
         return <OperatorButton char={operator.char} value={operator.value} />;
       })}
-    </OperatorButtonContainer>
+    </div>
   );
 };
 
 export default Operators;
-
-const OperatorButtonContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 40px;
-  justify-content: center;
-  align-items: center;
-`;

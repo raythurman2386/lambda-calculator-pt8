@@ -21,20 +21,15 @@ function App() {
   return (
     <div className='container'>
       <Logo />
-      <AppContainer>
+      <div>
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         <Display total={total} />
         <Specials />
         <Numbers />
         <Operators />
-      </AppContainer>
+      </div>
     </div>
   );
 }
 
 export default App;
-
-const AppContainer = styled.div`
-  display: flex;
-  width: 400px;
-`;
