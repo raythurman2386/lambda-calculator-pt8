@@ -15,7 +15,7 @@ function App() {
   // Your functions should accept a parameter of the the item data being displayed to the DOM (ie - should recieve 5 if the user clicks on
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
-  const [total, setTotal] = useState(0);
+  const [total, setTotal] = useState('');
 
   return (
     <div className='container'>
