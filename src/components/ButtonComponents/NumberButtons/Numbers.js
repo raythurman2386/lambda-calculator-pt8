@@ -16,8 +16,8 @@ const Numbers = ({ total, setTotal }) => {
        it any props needed by the child component*/}
       {numberButtons.map((number, index) =>
         index !== 9
-          ? <NumberButton total={total} setTotal={setTotal} value={number} className="btn" />
-          : <NumberButton total={total} setTotal={setTotal} value={number} className="zeroBtn" />)}
+          ? <NumberButton key={index} total={total} setTotal={setTotal} value={number} className="btn" />
+          : <NumberButton key={index} total={total} setTotal={setTotal} value={number} className="zeroBtn" />)}
     </div>
   )
 };
