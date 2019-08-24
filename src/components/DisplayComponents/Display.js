@@ -5,7 +5,14 @@ const Display = ({ total }) => {
   return (
     <div className='display'>
       {/* Display any props data here */}
-      <input maxlength="10" type="text" className="input" value={total} placeholder="0" disabled />
+      <input
+        maxlength='10'
+        type='text'
+        className='input'
+        value={total}
+        placeholder='0'
+        disabled
+      />
     </div>
   );
 };

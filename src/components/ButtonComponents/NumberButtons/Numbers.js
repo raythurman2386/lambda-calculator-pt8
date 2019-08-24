@@ -8,18 +8,33 @@ import { numbers } from '../../../data';
 
 const Numbers = ({ total, setTotal }) => {
   // STEP 2 - add the imported data to state
-  const [numberButtons, setNumberButtons] = useState(numbers);
+  const [numberButtons] = useState(numbers);
   return (
     <div className='number__btn__container'>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
       {numberButtons.map((number, index) =>
-        index !== 9
-          ? <NumberButton key={index} total={total} setTotal={setTotal} value={number} className="btn" />
-          : <NumberButton key={index} total={total} setTotal={setTotal} value={number} className="zeroBtn" />)}
+        index !== 9 ? (
+          <NumberButton
+            key={index}
+            total={total}
+            setTotal={setTotal}
+            value={number}
+            className='btn'
+          />
+        ) : (
+          <NumberButton
+            key={index}
+            total={total}
+            setTotal={setTotal}
+            value={number}
+            className='zeroBtn'
+          />
+        ),
+      )}
     </div>
-  )
+  );
 };
 
 export default Numbers;
