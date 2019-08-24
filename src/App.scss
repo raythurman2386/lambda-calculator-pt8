@@ -1,0 +1,95 @@
+// Main App Variables
+$primaryColor: #BB1233;
+$specialBtns: #2061B0;
+$operatorBtns: #237293;
+$numberBtns: #184379;
+
+.body {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: $primaryColor;
+  width: 395px;
+  padding: 2rem;
+  border-radius: 12px;
+  border: none;
+// Logo Styles
+
+
+// Main App styles
+  .app {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+// General btn styles
+.btn {
+  background: $numberBtns;
+  border-radius: 50%;
+  margin: .4rem;
+  width: 80px;
+  height: 80px;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.75);
+  &:hover {
+    background: lighten( $numberBtns, 5% );
+  }
+}
+
+// specialBtn styles
+.special__btn__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+
+  .specialBtn {
+    background: $specialBtns;
+    &:hover {
+    background: darken( $specialBtns, 5% );
+  }
+  }
+}
+
+// OperatorBtn styles
+.operator__btns {
+  display: flex;
+  flex-direction: column;
+
+  .operatorBtn {
+    background: $operatorBtns;
+    &:hover {
+    background: darken( $operatorBtns, 5% );
+  }
+  }
+}
+
+// NumberBtn styles
+  .number__btn__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+
+    .zeroBtn {
+      background: $numberBtns;
+      border-radius: 50px;
+      margin: .4rem;
+      width: 178px;
+      height: 80px;
+      border: none;
+      color: white;
+      font-size: 2rem;
+      box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.75);
+      &:hover {
+        background: lighten( $numberBtns, 5% );
+      }
+    }
+  }
+}
