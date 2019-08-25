@@ -1,6 +1,6 @@
 // Main App Variables
-$primaryColor: #BB1233;
-$specialBtns: #2061B0;
+$primaryColor: #bb1233;
+$specialBtns: #2061b0;
 $operatorBtns: #237293;
 $numberBtns: #184379;
 
@@ -14,10 +14,9 @@ $numberBtns: #184379;
   padding: 2rem;
   border-radius: 12px;
   border: none;
-// Logo Styles
+  // Logo Styles
 
-
-// Main App styles
+  // Main App styles
   .app {
     width: 100%;
     margin: auto;
@@ -26,51 +25,51 @@ $numberBtns: #184379;
     align-items: center;
   }
 
-// General btn styles
-.btn {
-  background: $numberBtns;
-  border-radius: 50%;
-  margin: .4rem;
-  width: 80px;
-  height: 80px;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.75);
-  &:hover {
-    background: lighten( $numberBtns, 5% );
-  }
-}
-
-// specialBtn styles
-.special__btn__container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
-
-  .specialBtn {
-    background: $specialBtns;
+  // General btn styles
+  .btn {
+    background: $numberBtns;
+    border-radius: 50%;
+    margin: 0.4rem;
+    width: 80px;
+    height: 80px;
+    border: 0.5px solid white;
+    color: white;
+    font-size: 2rem;
+    box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.75);
     &:hover {
-    background: darken( $specialBtns, 5% );
+      background: lighten($numberBtns, 5%);
+    }
   }
-  }
-}
 
-// OperatorBtn styles
-.operator__btns {
-  display: flex;
-  flex-direction: column;
+  // specialBtn styles
+  .special__btn__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
 
-  .operatorBtn {
-    background: $operatorBtns;
-    &:hover {
-    background: darken( $operatorBtns, 5% );
+    .specialBtn {
+      background: $specialBtns;
+      &:hover {
+        background: darken($specialBtns, 5%);
+      }
+    }
   }
-  }
-}
 
-// NumberBtn styles
+  // OperatorBtn styles
+  .operator__btns {
+    display: flex;
+    flex-direction: column;
+
+    .operatorBtn {
+      background: $operatorBtns;
+      &:hover {
+        background: darken($operatorBtns, 5%);
+      }
+    }
+  }
+
+  // NumberBtn styles
   .number__btn__container {
     display: flex;
     flex-wrap: wrap;
@@ -80,15 +79,15 @@ $numberBtns: #184379;
     .zeroBtn {
       background: $numberBtns;
       border-radius: 50px;
-      margin: .4rem;
+      margin: 0.4rem;
       width: 178px;
       height: 80px;
-      border: none;
+      border: 0.5px solid white;
       color: white;
       font-size: 2rem;
-      box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.75);
+      box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.75);
       &:hover {
-        background: lighten( $numberBtns, 5% );
+        background: lighten($numberBtns, 5%);
       }
     }
   }
