@@ -17,12 +17,6 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   const [total, setTotal] = useState('');
 
-  function handleChange(e) {
-    setTotal(e);
-  }
-
-  function performCalculation() {}
-
   return (
     <div className='container'>
       <Logo className='logo' />
@@ -30,11 +24,11 @@ function App() {
       <div className='app'>
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         <div>
-          <Specials onClick={handleChange} total={total} />
+          <Specials total={total} setTotal={setTotal} />
           <Numbers total={total} setTotal={setTotal} />
         </div>
         <div>
-          <Operators />
+          <Operators total={total} setTotal={setTotal} />
         </div>
       </div>
     </div>

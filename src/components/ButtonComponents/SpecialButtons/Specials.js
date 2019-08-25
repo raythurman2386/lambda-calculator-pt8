@@ -6,7 +6,7 @@ import SpecialButton from './SpecialButton';
 //Import your array data to from the provided data file
 import { specials } from '../../../data';
 
-const Specials = ({ handleChange, total }) => {
+const Specials = ({ setTotal, total }) => {
   // STEP 2 - add the imported data to state
   const [specialButtons] = useState(specials);
 
@@ -19,8 +19,8 @@ const Specials = ({ handleChange, total }) => {
         return (
           <SpecialButton
             key={index}
-            value={special}
-            handleChange={handleChange}
+            special={special}
+            setTotal={setTotal}
             total={total}
           />
         );
