@@ -4,15 +4,14 @@ const SpecialButton = ({ special, total, setTotal }) => {
   // Reset the total back to 0
   function clearData() {
     switch (special) {
-      case 'C':
-        setTotal('');
-        break;
       case '+/-':
         setTotal(total * -1);
         break;
       case '%':
         setTotal(total / 100);
         break;
+      default:
+        setTotal('');
     }
   }
 
