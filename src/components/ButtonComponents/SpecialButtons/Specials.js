@@ -19,7 +19,7 @@ const Specials = ({ setTotal, total }) => {
         return (
           <SpecialButton
             key={index}
-            value={special}
+            special={special}
             setTotal={setTotal}
             total={total}
           />
