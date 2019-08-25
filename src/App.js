@@ -17,10 +17,6 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   const [total, setTotal] = useState('');
 
-  function handleChange(e) {
-    setTotal(e);
-  }
-
   return (
     <div className='container'>
       <Logo className='logo' />

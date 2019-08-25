@@ -3,11 +3,12 @@ import React from 'react';
 const OperatorButton = ({ total, setTotal, value, char }) => {
   // handler function
   function handleChange() {
-    if (char === '+' || '-' || 'x' || '/') {
-      return setTotal(total + value);
-    } else if (char === '=') {
-      setTotal(eval(total));
-    }
+    if (char === '+' || '-' || 'x' || '/') return setTotal(total + value);
+  }
+
+  // Calculation
+  function handleCalculation() {
+    if (char === '=') return setTotal(eval(total));
   }
 
   return (
@@ -17,7 +18,7 @@ const OperatorButton = ({ total, setTotal, value, char }) => {
         className='btn operatorBtn'
         key={char}
         value={value}
-        onClick={() => handleChange()}
+        onClick={() => handleChange() || handleCalculation()}
       >
         {char}
       </button>
